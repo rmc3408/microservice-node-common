@@ -10,7 +10,7 @@ import currentUserHandler from './middleware/currentUserHandler'
 import errorHandler from './middleware/errHandler'
 import userValidatorHandler, { userValidator } from './middleware/userHandler' 
 
-export default {
+export {
   BadRequestError,
   CustomError,
   DatabaseError,
