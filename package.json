@@ -11,8 +11,8 @@
     "clean": "del build",
     "version": "npm version patch -m \"Upgrade to %s for reasons\"",
     "build": "npm run clean && tsc",
-    "commit": "git add . && git commit -am \"update\" ",
-    "publish": "npm run commit && npm run version && npm run build && npm publish"
+    "commit": "git add . && git commit -m \"update\" ",
+    "publish": "git add . && git commit -m \"update\" && npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
