@@ -12,7 +12,7 @@
     "version": "npm version patch",
     "build": "npm run version && npm run clean && tsc",
     "commit": "git add . && git commit -m 'update' && git push",
-    "publish": "npm run build && npm run commit && npm publish"
+    "publish": "npm run commit && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
