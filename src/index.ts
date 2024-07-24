@@ -1,11 +1,25 @@
-export * from './error/badRequest'
-export * from './error/custom'
-export * from './error/database'
-export * from './error/notAuthError'
-export * from './error/notFound'
-export * from './error/validator'
+import BadRequestError from './error/badRequest'
+import CustomError from './error/custom'
+import DatabaseError from './error/database'
+import NotAuthorizedError from './error/notAuthError'
+import NotFoundError from './error/notFound'
+import RequestValidatorError from './error/validator'
 
-export * from './middleware/authHandler'
-export * from './middleware/currentUserHandler'
-export * from './middleware/errHandler'
-export * from './middleware/userHandler'
+import authHandler from './middleware/authHandler'
+import currentUserHandler from './middleware/currentUserHandler'
+import errorHandler from './middleware/errHandler'
+import userValidatorHandler, { userValidator } from './middleware/userHandler' 
+
+export default {
+  BadRequestError,
+  CustomError,
+  DatabaseError,
+  NotAuthorizedError,
+  NotFoundError,
+  RequestValidatorError,
+  authHandler,
+  currentUserHandler,
+  errorHandler,
+  userValidatorHandler,
+  userValidator
+}
