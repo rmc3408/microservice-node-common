@@ -5,13 +5,13 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
-    "./build/**/*"
+    "build/**/*"
   ],
   "scripts": {
     "clean": "del build",
     "version": "npm version patch",
     "build": "npm run version && npm run clean && tsc",
-    "commit": "git add . && git commit -m 'update' && git push",
+    "commit": "git add . && git commit -m 'update'",
     "publish": "npm run commit && npm run build && npm publish"
   },
   "keywords": [],
