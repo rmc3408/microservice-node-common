@@ -9,10 +9,10 @@
   ],
   "scripts": {
     "clean": "del build",
-    "version": "npm postversion patch",
+    "version": "npm version patch",
     "build": "npm run clean && tsc",
-    "commit": "git add . && git commit -am \"update\" && git push",
-    "publish": "npm run build && npm run commit && npm run version && npm publish"
+    "commit": "git add . && git commit -am \"update\" ",
+    "publish": "npm run build && npm run commit && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "",
