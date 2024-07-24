@@ -22,4 +22,5 @@ npm public --access public
 - patch to new version `npm version patch`
 
 
+to remove from npm Js `npm unpublish @rmc3408/microservice-node-common@0.0.10`
 
