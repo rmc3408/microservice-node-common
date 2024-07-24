@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "clean": "del build",
-    "update": "npm version patch",
-    "build": "npm run clean && && npm run update && tsc",
+    "version": "npm version patch",
+    "build": "npm run version && npm run clean && tsc",
     "commit": "git add . && git commit -m 'update' && git push",
     "publish": "npm run commit && npm run build && npm publish"
   },
