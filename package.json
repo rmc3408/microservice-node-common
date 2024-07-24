@@ -11,7 +11,7 @@
     "clean": "del build",
     "update": "npm version patch",
     "build": "npm run clean && && npm run update && tsc",
-    "commit": "git add . && git commit -m 'update'",
+    "commit": "git add . && git commit -m 'update' && git push",
     "publish": "npm run commit && npm run build && npm publish"
   },
   "keywords": [],
