@@ -8,6 +8,6 @@ const color: Color = {
   blue: 10
 }
 
-console.log('The color is',color)
+console.log('The colors: ',color)
 
 export default color
