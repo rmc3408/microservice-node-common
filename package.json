@@ -5,12 +5,12 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
-    "build/**/*"
+    "./build/**/*"
   ],
   "scripts": {
-    "clean": "del ./build/*",
+    "clean": "del build",
     "build": "npm run clean && tsc",
-    "publish": "npm run clean && npm version patch && tsc && npm publish"
+    "publish": "npm run build && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "",
