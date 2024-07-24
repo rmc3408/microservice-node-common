@@ -1,6 +1,6 @@
 {
   "name": "@rmc3408/microservice-node-common",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -12,7 +12,7 @@
     "build": "npm run clean && tsc",
     "vers": "npm version patch",
     "save": "git add . && git commit -am \"update\" ",
-    "pub": " npm run build && npm run save && npm run vers && npm publish"
+    "pub": "npm run save && npm run vers && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
