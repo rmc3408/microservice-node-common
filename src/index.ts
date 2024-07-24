@@ -8,7 +8,8 @@ import RequestValidatorError from './error/validator'
 import authHandler from './middleware/authHandler'
 import currentUserHandler from './middleware/currentUserHandler'
 import errorHandler from './middleware/errHandler'
-import userValidatorHandler, { userValidator } from './middleware/userHandler' 
+import userValidatorHandler, { userValidator } from './middleware/userHandler'
+import ticketValidatorHandler, { ticketValidator } from './middleware/ticketHandler'  
 
 export {
   BadRequestError,
@@ -21,5 +22,7 @@ export {
   currentUserHandler,
   errorHandler,
   userValidatorHandler,
-  userValidator
+  userValidator,
+  ticketValidator,
+  ticketValidatorHandler
 }
