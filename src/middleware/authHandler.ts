@@ -11,7 +11,7 @@ type UserPayload = {
 declare global {
   namespace Express {
     interface Request {
-      currentUser?: string | UserPayload
+      currentUser?: UserPayload
     }
   }
 }
