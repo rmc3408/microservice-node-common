@@ -27,6 +27,6 @@ export {
   userValidator,
   ticketValidator,
   ticketValidatorHandler,
-  BasePublisher,
   BaseListener,
+  BasePublisher,
 }
