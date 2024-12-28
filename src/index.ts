@@ -10,6 +10,8 @@ import currentUserHandler from './middleware/currentUserHandler'
 import errorHandler from './middleware/errHandler'
 import userValidatorHandler, { userValidator } from './middleware/userHandler'
 import ticketValidatorHandler, { ticketValidator } from './middleware/ticketHandler'  
+import BaseListener from './nats/listener'
+import BasePublisher from './nats/publisher'
 
 export {
   BadRequestError,
@@ -24,5 +26,7 @@ export {
   userValidatorHandler,
   userValidator,
   ticketValidator,
-  ticketValidatorHandler
+  ticketValidatorHandler,
+  BasePublisher,
+  BaseListener,
 }
