@@ -1,10 +1,11 @@
 # microservice-node-common
 
-## To create a npm package account,
-email: rmc3408@protonmail.com
-username: rmc3408.dev
-organizationName: @rmc3408
-Password: save in protonPass
+## To create a npm package account
+
+email: rmc3408@protonmail.com  
+username: rmc3408.dev  
+organizationName: @rmc3408  
+Password: save in protonPass  
 
 
 1. Create a new github repo, `npm init` and publish using:  
