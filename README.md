@@ -1,26 +1,32 @@
 # microservice-node-common
 
-1. Create a npm package account, username and organization name
-rmc3408@protonmail.com
-rmc3408.dev
-@rmc3408
+## To create a npm package account,
+email: rmc3408@protonmail.com
+username: rmc3408.dev
+organizationName: @rmc3408
+Password: save in protonPass
 
-2. Create a new github repo, `npm init` and publish
+
+1. Create a new github repo, `npm init` and publish using:  
 ```
 npm adduser
 npm public --access public
 ```
 
-3. Update package json adding new configurations
-- run `tsc --init`  
-- convert from .ts -> .js using compiler via tsconfig, outDir = ./build  
-- install dependencies `npm install typescript del-cli --save-dev`  
-- update package.json  
+2. convert from .ts -> .js using compiler via tsconfig, outDir = ./build  
+`tsc --init`
+
+3. Install necessary packages  
+`npm install typescript del-cli --save-dev`
+
+4. update the `package.json` content properties:  
   - `main` is first file to run via import package  
   - `types` is file definition  
-  - `files` are all folder to be installed  
-- patch to new version `npm version patch`
+  - `files` are all folder to be installed
 
+5. patch to new version
+`npm version patch`
 
-to remove from npm Js `npm unpublish @rmc3408/microservice-node-common@0.0.10`
+6. To remove from npm Js
+`npm unpublish @rmc3408/microservice-node-common@0.0.10`
 
