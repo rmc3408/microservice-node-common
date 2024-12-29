@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express'
 import { body, validationResult } from 'express-validator'
 import RequestValidatorError from '../error/validator'
+import mongoose from 'mongoose'
 
 
 export const ticketValidator = [
