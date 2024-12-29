@@ -11,7 +11,7 @@ import errorHandler from './middleware/errHandler'
 import validatorHandler, { userValidator, ticketValidator, orderValidator } from './middleware/validatorHandler'  
 import BaseListener from './nats/listener'
 import BasePublisher from './nats/publisher'
-import { channels } from './nats/enum'
+import { channels, orderStatus } from './nats/enum'
 import { TicketCreatedEvent, TicketUpdatedEvent } from './nats/events'
 
 export {
@@ -32,5 +32,6 @@ export {
   BasePublisher,
   TicketCreatedEvent,
   TicketUpdatedEvent,
-  channels
+  channels,
+  orderStatus,
 }
