@@ -12,6 +12,8 @@ import userValidatorHandler, { userValidator } from './middleware/userHandler'
 import ticketValidatorHandler, { ticketValidator } from './middleware/ticketHandler'  
 import BaseListener from './nats/listener'
 import BasePublisher from './nats/publisher'
+import { channels } from './nats/enum'
+import { TicketCreatedEvent, TicketUpdatedEvent } from './nats/events'
 
 export {
   BadRequestError,
@@ -29,4 +31,7 @@ export {
   ticketValidatorHandler,
   BaseListener,
   BasePublisher,
+  TicketCreatedEvent,
+  TicketUpdatedEvent,
+  channels
 }

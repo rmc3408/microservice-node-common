@@ -1,21 +1,18 @@
 import { channels } from './enum'
 
+interface TicketData {
+  id: string
+  title: string
+  price: number
+  userId: string
+}
+
 export interface TicketCreatedEvent {
   channelName: channels.TicketCreated
-  data: {
-    id: string
-    title: string
-    price: number
-    userId: string
-  }
+  data: TicketData
 }
 
 export interface TicketUpdatedEvent {
   channelName: channels.TicketUpdated
-  data: {
-    id: string
-    title: string
-    price: number
-    userId: string
-  }
+  data: TicketData
 }
