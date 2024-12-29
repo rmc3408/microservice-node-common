@@ -8,8 +8,7 @@ import RequestValidatorError from './error/validator'
 import authHandler from './middleware/authHandler'
 import currentUserHandler from './middleware/currentUserHandler'
 import errorHandler from './middleware/errHandler'
-import userValidatorHandler, { userValidator } from './middleware/userHandler'
-import ticketValidatorHandler, { ticketValidator } from './middleware/ticketHandler'  
+import validatorHandler, { userValidator, ticketValidator, orderValidator } from './middleware/validatorHandler'  
 import BaseListener from './nats/listener'
 import BasePublisher from './nats/publisher'
 import { channels } from './nats/enum'
@@ -25,10 +24,10 @@ export {
   authHandler,
   currentUserHandler,
   errorHandler,
-  userValidatorHandler,
+  orderValidator,
   userValidator,
   ticketValidator,
-  ticketValidatorHandler,
+  validatorHandler,
   BaseListener,
   BasePublisher,
   TicketCreatedEvent,
